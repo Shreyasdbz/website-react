@@ -1,0 +1,219 @@
+/* Define standard variables and values for website */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section {
+  padding: 2rem 2rem;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.nav {
+  position: fixed;
+  bottom: 4rem;
+  right: 2rem;
+}
+
+.textSection {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  height: 30rem;
+}
+
+.textSection .landingText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.textSection .landingText .normal {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.textSection .landingText .name {
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+.textSection .descText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 2rem;
+}
+
+.textSection .descText .line {
+  padding: 0.5rem 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.textSection .descText .normalText {
+  font-size: 2rem;
+}
+
+.textSection .descText .actionButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 20px;
+  margin: 0rem 0.5rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.textSection .descText .actionButton .btnText {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: white;
+  padding: 0.25rem 1rem;
+  text-shadow: 2px 0px 15px rgba(0, 0, 0, 0.35);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.textSection .descText .codeBtn {
+  background-color: #d4b9b6;
+  -webkit-box-shadow: 5px 0px 15px rgba(212, 185, 182, 0.75);
+          box-shadow: 5px 0px 15px rgba(212, 185, 182, 0.75);
+  border-radius: 20px;
+  border: 2px solid transparent;
+}
+
+.textSection .descText .codeBtn:hover {
+  background: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 2px solid #d4b9b6;
+  cursor: pointer;
+}
+
+.textSection .descText .codeBtn:hover .btnText {
+  color: #d4b9b6;
+  text-shadow: none;
+}
+
+.textSection .descText .captureBtn {
+  background-color: #b6d4b9;
+  -webkit-box-shadow: 5px 0px 15px rgba(182, 212, 185, 0.75);
+          box-shadow: 5px 0px 15px rgba(182, 212, 185, 0.75);
+  border-radius: 20px;
+  border: 2px solid transparent;
+}
+
+.textSection .descText .captureBtn:hover {
+  background: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 2px solid #b6d4b9;
+  cursor: pointer;
+}
+
+.textSection .descText .captureBtn:hover .btnText {
+  color: #b6d4b9;
+  text-shadow: none;
+}
+
+.imageSection {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.imageSection .profilePic {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50rem;
+  -webkit-box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.25);
+          box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.25);
+}
+/*# sourceMappingURL=main.css.map */

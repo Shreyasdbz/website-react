@@ -1,0 +1,161 @@
+/* Define standard variables and values for website */
+$pinkColor: #e8d7e3;
+$greenColor: #b6d4b9;
+$brownColor: #d4b9b6;
+$purpleColor: #b9b6d4;
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  transition: 0.3s;
+}
+*,
+*::after,
+*::before {
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.section {
+  padding: 2rem 2rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  // border: 1px solid black;
+}
+
+// ---------------------- NAVIGATION ----------------------
+
+.nav {
+  position: fixed;
+  bottom: 4rem;
+  right: 2rem;
+}
+
+// ---------------------- HERO ----------------------
+
+.textSection {
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  height: 30rem;
+
+  .landingText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    .normal {
+      font-size: 3rem;
+      font-weight: 600;
+    }
+
+    .name {
+      font-size: 4rem;
+      font-weight: 800;
+    }
+  }
+
+  .descText {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+
+    .line {
+      padding: 0.5rem 0rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .normalText {
+      font-size: 2rem;
+    }
+
+    .actionButton {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 20px;
+      margin: 0rem 0.5rem;
+      transition: 0.3s;
+
+      .btnText {
+        font-size: 1.75rem;
+        font-weight: 600;
+        color: white;
+        padding: 0.25rem 1rem;
+        text-shadow: 2px 0px 15px rgba(0, 0, 0, 0.35);
+        transition: 0.3s;
+      }
+    }
+
+    .codeBtn {
+      background-color: rgb(212, 185, 182);
+      box-shadow: 5px 0px 15px rgba(212, 185, 182, 0.75);
+      border-radius: 20px;
+      border: 2px solid transparent;
+    }
+    .codeBtn:hover {
+      background: none;
+      box-shadow: none;
+      border: 2px solid rgb(212, 185, 182);
+      cursor: pointer;
+
+      .btnText {
+        color: rgb(212, 185, 182);
+        // text-shadow: 2px 0px 15px rgba(212, 185, 182, 0.5);
+        text-shadow: none;
+      }
+    }
+
+    .captureBtn {
+      background-color: rgb(182, 212, 185);
+      box-shadow: 5px 0px 15px rgba(182, 212, 185, 0.75);
+      border-radius: 20px;
+      border: 2px solid transparent;
+    }
+    .captureBtn:hover {
+      background: none;
+      box-shadow: none;
+      border: 2px solid rgb(182, 212, 185);
+      cursor: pointer;
+
+      .btnText {
+        color: rgb(182, 212, 185);
+        // text-shadow: 2px 0px 15px rgba(182, 212, 185, 0.5);
+        text-shadow: none;
+      }
+    }
+  }
+}
+
+.imageSection {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .profilePic {
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50rem;
+    box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.25);
+  }
+}
