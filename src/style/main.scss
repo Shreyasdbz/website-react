@@ -189,7 +189,7 @@ $purpleColor: #b9b6d4;
 
 .imageSection {
   width: 50%;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
 
@@ -202,9 +202,15 @@ $purpleColor: #b9b6d4;
   .profilePic:hover {
     position: relative;
     transform: scale(1.025);
+    // transform: rotate(5deg);
     transition: 0.3s;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.125);
     border-radius: 15rem;
+  }
+}
+@media (min-width: 800px) {
+  .imageSection {
+    display: flex;
   }
 }
 
@@ -218,10 +224,11 @@ $purpleColor: #b9b6d4;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    padding: 2rem 0rem;
 
     .text {
-      font-size: 3rem;
+      font-size: 3.5rem;
       color: $purpleColor;
       font-weight: 800;
     }
@@ -235,7 +242,7 @@ $purpleColor: #b9b6d4;
     width: 100%;
     padding: 1rem 0rem;
     .text {
-      font-size: 1.5rem;
+      font-size: 1.35rem;
     }
   }
 
@@ -265,7 +272,7 @@ $purpleColor: #b9b6d4;
         flex-direction: column;
         margin: 1rem;
         margin-left: 0rem;
-        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+        margin-bottom: 0.5rem;
         border-radius: 0.75rem;
         padding: 1rem;
 
@@ -281,10 +288,10 @@ $purpleColor: #b9b6d4;
             justify-content: center;
 
             .workLogo {
-              height: 4rem;
-              width: 4rem;
+              height: 2.5rem;
+              width: auto;
               border-radius: 5rem;
-              box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+              box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.125);
               // border: 3px solid white;
             }
           }
@@ -297,19 +304,25 @@ $purpleColor: #b9b6d4;
             margin-left: 1rem;
 
             .companyName {
-              font-size: 1.5rem;
-              text-transform: uppercase;
+              font-size: 1.25rem;
+              // text-transform: uppercase;
               font-weight: 500;
               color: white;
-              text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.125);
-              padding-bottom: 0.125rem;
+              text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
             }
 
             .position {
-              padding-top: 0.125rem;
-              font-size: 1.25rem;
+              padding: 0.125rem 0rem;
+              font-size: 1.15rem;
               font-weight: 500;
               color: rgba(0, 0, 0, 0.6);
+            }
+
+            .timeline {
+              text-transform: uppercase;
+              font-size: 1rem;
+              font-weight: 600;
+              color: rgba(0, 0, 0, 0.5);
             }
           }
         }
@@ -320,12 +333,11 @@ $purpleColor: #b9b6d4;
           background-color: rgba(0, 0, 0, 0.125);
           border-radius: 1rem;
           margin: 1rem;
-          display: none;
           transition: 1s;
         }
 
         .bottomRow {
-          display: none;
+          display: flex;
           align-items: flex-start;
           justify-content: center;
           flex-direction: column;
@@ -339,24 +351,65 @@ $purpleColor: #b9b6d4;
         }
       }
       .workCard:hover {
-        .workCardDivider {
-          display: inline;
-          transition: 1s;
-        }
-        .bottomRow {
-          display: flex;
-          transition: 1s;
+        position: relative;
+        transform: scale(1.025);
+        box-shadow: none;
+        cursor: pointer;
+
+        .topRow {
+          .iconSide {
+            .workLogo {
+              transform: rotate(10deg);
+              box-shadow: none;
+            }
+          }
         }
       }
 
-      .lockheed {
-        background: rgb(0, 91, 173);
+      .work-lockheed {
+        background: rgb(64, 138, 195);
         background: linear-gradient(
           166deg,
-          rgba(0, 91, 173, 1) 0%,
-          rgba(128, 173, 214, 1) 100%
+          rgba(64, 138, 195, 1) 0%,
+          rgba(119, 171, 212, 1) 100%
         );
-        box-shadow: 0px 0px 15px rgba(0, 91, 173, 0.5);
+        box-shadow: 0px 0px 15px rgba(64, 138, 195, 0.5);
+      }
+      .work-ups {
+        background: rgb(254, 216, 0);
+        background: linear-gradient(
+          166deg,
+          rgba(254, 216, 0, 1) 0%,
+          rgba(255, 236, 128, 1) 100%
+        );
+        box-shadow: 0px 0px 15px rgba(254, 216, 0, 0.5);
+      }
+      .work-synchronoss {
+        background: rgb(1, 201, 234);
+        background: linear-gradient(
+          166deg,
+          rgba(1, 201, 234, 1) 0%,
+          rgba(192, 242, 250, 1) 100%
+        );
+        box-shadow: 0px 0px 15px rgba(1, 201, 234, 0.5);
+      }
+      .work-psu {
+        background: rgb(37, 135, 187);
+        background: linear-gradient(
+          166deg,
+          rgba(37, 135, 187, 1) 0%,
+          rgba(119, 180, 212, 1) 100%
+        );
+        box-shadow: 0px 0px 15px rgba(37, 135, 187, 0.5);
+      }
+      .work-psu-fb {
+        background: rgb(37, 135, 187);
+        background: linear-gradient(
+          166deg,
+          rgba(37, 135, 187, 1) 0%,
+          rgba(119, 180, 212, 1) 100%
+        );
+        box-shadow: 0px 0px 15px rgba(37, 135, 187, 0.5);
       }
     }
   }

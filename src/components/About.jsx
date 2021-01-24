@@ -18,7 +18,7 @@ function About() {
       location: "Scranton, PA",
       position: "Software Engineering Intern",
       timeline: "Summer 2018",
-      logo: "lockheedLogo.png",
+      logo: "upsLogo.jpg",
       description:
         "Led the effort of modernizing the front-end for internal .NET revenue allocation applications to accommodate for responsiveness and up-to-date UI design. Also worked on various PL/SQL queries to increase efficiency for large scale data operations.",
     },
@@ -28,7 +28,7 @@ function About() {
       location: "Bethlehem, PA",
       position: "Software Engineering Intern",
       timeline: "Summer 2016",
-      logo: "lockheedLogo.png",
+      logo: "synchronossLogo.png",
       description:
         "Picked up valuable software as well as workplace skills while learning to develop server side Java applications on the Apache web framework for the company’s various clients.",
     },
@@ -38,19 +38,80 @@ function About() {
       location: "Erie, PA",
       position: "IT Help Desk Specialist",
       timeline: "Fall 2016",
-      logo: "lockheedLogo.png",
+      logo: "psuLogo.png",
       description:
         "Served as a Tech Help Desk specialist for the university’s technology center assisting students and faculty with computer related issues. Other responsibilities included maintaining the tech center website and researching products for educational use.",
     },
     {
-      company: "Penn State University",
+      company: "Penn State Athletics",
       cssClass: "work-psu-fb",
       location: "State College, PA",
-      position: "PSU Football Photographer",
+      position: "Football Photographer",
       timeline: "Spring 2019",
-      logo: "lockheedLogo.png",
+      logo: "psuFootballLogo.jpg",
       description:
         "Served as a Tech Help Desk specialist for the university’s technology center assisting students and faculty with computer related issues. Other responsibilities included maintaining the tech center website and researching products for educational use.",
+    },
+  ];
+
+  const languages = [
+    {
+      name: "Python",
+      logo: "pythonLogo.png",
+    },
+    {
+      name: "Javascript",
+      logo: "javascriptLogo.png",
+    },
+    {
+      name: "C",
+      logo: "cLogo.png",
+    },
+    {
+      name: "C++",
+      logo: "cPlusPlusLogo.png",
+    },
+    {
+      name: "HTML",
+      logo: "htmlLogo.png",
+    },
+    {
+      name: "CSS",
+      logo: "cssLogo.png",
+    },
+    {
+      name: "Bash",
+      logo: "bashLogo.png",
+    },
+  ];
+  const technologies = [
+    {
+      name: "Node.JS",
+      logo: "nodeLogo.png",
+    },
+    {
+      name: "React.JS",
+      logo: "reactLogo.png",
+    },
+    {
+      name: "Flask",
+      logo: "flaskLogo.png",
+    },
+    {
+      name: "REST API",
+      logo: "restLogo.png",
+    },
+    {
+      name: "Git",
+      logo: "gitLogo.png",
+    },
+    {
+      name: "Agile Development",
+      logo: "agileLogo.png",
+    },
+    {
+      name: "Photoshop",
+      logo: "photoshopLogo.png",
     },
   ];
 
@@ -61,24 +122,24 @@ function About() {
       </div>
       <div className="introText">
         <span className="text">
-          I’m currently a software engineer over at Lockheed Martin Aeronautics
-          in Fort Worth, TX. When I’m not working on some cool fighter jet
-          simulations, I like to take photos of people and places. Oh and play
-          soccer. Tons of it.
+          I’m currently a software engineer over at Lockheed Martin in Fort
+          Worth, TX. When I’m not working on some cool fighter jet simulations,
+          I like to take photos of people and places. Oh and play soccer. Tons
+          of it.
         </span>
       </div>
       <div className="work">
         <div className="workIntro">
-          <span>All my work experience:</span>
+          <span>Here's couple of the companies I have worked with so far:</span>
         </div>
         <div className="workGrid">
           {workExp.map((work) => {
             return (
-              <div className="workCard lockheed" key={work.company}>
+              <div className={"workCard " + work.cssClass} key={work.company}>
                 <div className="topRow">
                   <div className="iconSide">
                     <img
-                      src="lockheedLogo.png"
+                      src={work.logo}
                       alt="lockheedLogo"
                       className="workLogo"
                     />
@@ -86,13 +147,8 @@ function About() {
                   <div className="textSide">
                     <span className="companyName">{work.company}</span>
                     <span className="position">{work.position}</span>
+                    {/* <span className="timeline">{work.timeline}</span> */}
                   </div>
-                </div>
-                <div className="workCardDivider" />
-                <div className="bottomRow">
-                  <span className="text">
-                    I joined Lockheed Martin right after graduating
-                  </span>
                 </div>
               </div>
             );
