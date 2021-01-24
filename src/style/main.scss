@@ -42,6 +42,7 @@ $purpleColor: #b9b6d4;
   position: fixed;
   bottom: 4rem;
   right: 2rem;
+  display: none;
 }
 
 // ---------------------- HERO ----------------------
@@ -75,7 +76,7 @@ $purpleColor: #b9b6d4;
   .descText {
     display: flex;
     flex-direction: column;
-    margin-top: 2rem;
+    margin: 1rem 0rem;
 
     .line {
       padding: 0.5rem 0rem;
@@ -103,6 +104,13 @@ $purpleColor: #b9b6d4;
         padding: 0.25rem 1rem;
         text-shadow: 2px 0px 15px rgba(0, 0, 0, 0.35);
         transition: 0.3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .icon {
+          margin-left: 0.5rem;
+        }
       }
     }
 
@@ -144,6 +152,39 @@ $purpleColor: #b9b6d4;
       }
     }
   }
+
+  .aboutText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .normal {
+      font-size: 1.5rem;
+    }
+
+    .aboutLink {
+      .about {
+        padding: 0rem 0.5rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #b9b6d4;
+        text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.125);
+      }
+
+      .icon {
+        padding: 0;
+        font-weight: bold;
+      }
+    }
+    .aboutLink:hover {
+      cursor: pointer;
+
+      .icon {
+        transform: rotate(90deg);
+        transition: 0.5s;
+      }
+    }
+  }
 }
 
 .imageSection {
@@ -156,6 +197,167 @@ $purpleColor: #b9b6d4;
     width: 30rem;
     height: 30rem;
     border-radius: 50rem;
-    box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 25px rgba(232, 215, 227, 1);
+  }
+  .profilePic:hover {
+    position: relative;
+    transform: scale(1.025);
+    transition: 0.3s;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.125);
+    border-radius: 15rem;
+  }
+}
+
+// ---------------------- ABOUT ----------------------
+
+.aboutSection {
+  justify-content: flex-start;
+  flex-direction: column;
+
+  .title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .text {
+      font-size: 3rem;
+      color: $purpleColor;
+      font-weight: 800;
+    }
+  }
+
+  .introText {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 1rem 0rem;
+    .text {
+      font-size: 1.5rem;
+    }
+  }
+
+  .work {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 1.5rem 0rem;
+
+    .workIntro {
+      span {
+        font-size: 2rem;
+        font-weight: 600;
+      }
+    }
+
+    .workGrid {
+      display: flex;
+      flex-flow: wrap;
+
+      .workCard {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 1rem;
+        margin-left: 0rem;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+        border-radius: 0.75rem;
+        padding: 1rem;
+
+        .topRow {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: row;
+
+          .iconSide {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .workLogo {
+              height: 4rem;
+              width: 4rem;
+              border-radius: 5rem;
+              box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+              // border: 3px solid white;
+            }
+          }
+
+          .textSide {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+            margin-left: 1rem;
+
+            .companyName {
+              font-size: 1.5rem;
+              text-transform: uppercase;
+              font-weight: 500;
+              color: white;
+              text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.125);
+              padding-bottom: 0.125rem;
+            }
+
+            .position {
+              padding-top: 0.125rem;
+              font-size: 1.25rem;
+              font-weight: 500;
+              color: rgba(0, 0, 0, 0.6);
+            }
+          }
+        }
+
+        .workCardDivider {
+          height: 0.125rem;
+          width: 90%;
+          background-color: rgba(0, 0, 0, 0.125);
+          border-radius: 1rem;
+          margin: 1rem;
+          display: none;
+          transition: 1s;
+        }
+
+        .bottomRow {
+          display: none;
+          align-items: flex-start;
+          justify-content: center;
+          flex-direction: column;
+          width: 100%;
+          transition: 1s;
+
+          .text {
+            font-size: 1.125rem;
+            color: rgba(0, 0, 0, 0.75);
+          }
+        }
+      }
+      .workCard:hover {
+        .workCardDivider {
+          display: inline;
+          transition: 1s;
+        }
+        .bottomRow {
+          display: flex;
+          transition: 1s;
+        }
+      }
+
+      .lockheed {
+        background: rgb(0, 91, 173);
+        background: linear-gradient(
+          166deg,
+          rgba(0, 91, 173, 1) 0%,
+          rgba(128, 173, 214, 1) 100%
+        );
+        box-shadow: 0px 0px 15px rgba(0, 91, 173, 0.5);
+      }
+    }
   }
 }

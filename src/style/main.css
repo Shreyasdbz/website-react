@@ -52,6 +52,7 @@
   position: fixed;
   bottom: 4rem;
   right: 2rem;
+  display: none;
 }
 
 .textSection {
@@ -107,7 +108,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 2rem;
+  margin: 1rem 0rem;
 }
 
 .textSection .descText .line {
@@ -152,6 +153,19 @@
   text-shadow: 2px 0px 15px rgba(0, 0, 0, 0.35);
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.textSection .descText .actionButton .btnText .icon {
+  margin-left: 0.5rem;
 }
 
 .textSection .descText .codeBtn {
@@ -196,6 +210,46 @@
   text-shadow: none;
 }
 
+.textSection .aboutText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.textSection .aboutText .normal {
+  font-size: 1.5rem;
+}
+
+.textSection .aboutText .aboutLink .about {
+  padding: 0rem 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #b9b6d4;
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.125);
+}
+
+.textSection .aboutText .aboutLink .icon {
+  padding: 0;
+  font-weight: bold;
+}
+
+.textSection .aboutText .aboutLink:hover {
+  cursor: pointer;
+}
+
+.textSection .aboutText .aboutLink:hover .icon {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 .imageSection {
   width: 50%;
   display: -webkit-box;
@@ -213,7 +267,242 @@
   width: 30rem;
   height: 30rem;
   border-radius: 50rem;
-  -webkit-box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.25);
-          box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 0px 25px #e8d7e3;
+          box-shadow: 0px 0px 25px #e8d7e3;
+}
+
+.imageSection .profilePic:hover {
+  position: relative;
+  -webkit-transform: scale(1.025);
+          transform: scale(1.025);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.125);
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.125);
+  border-radius: 15rem;
+}
+
+.aboutSection {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.aboutSection .title {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.aboutSection .title .text {
+  font-size: 3rem;
+  color: #b9b6d4;
+  font-weight: 800;
+}
+
+.aboutSection .introText {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  padding: 1rem 0rem;
+}
+
+.aboutSection .introText .text {
+  font-size: 1.5rem;
+}
+
+.aboutSection .work {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  padding: 1.5rem 0rem;
+}
+
+.aboutSection .work .workIntro span {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.aboutSection .work .workGrid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+}
+
+.aboutSection .work .workGrid .workCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1rem;
+  margin-left: 0rem;
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 0.75rem;
+  padding: 1rem;
+}
+
+.aboutSection .work .workGrid .workCard .topRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.aboutSection .work .workGrid .workCard .topRow .iconSide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.aboutSection .work .workGrid .workCard .topRow .iconSide .workLogo {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 5rem;
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+}
+
+.aboutSection .work .workGrid .workCard .topRow .textSide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 1rem;
+}
+
+.aboutSection .work .workGrid .workCard .topRow .textSide .companyName {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: white;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.125);
+  padding-bottom: 0.125rem;
+}
+
+.aboutSection .work .workGrid .workCard .topRow .textSide .position {
+  padding-top: 0.125rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.aboutSection .work .workGrid .workCard .workCardDivider {
+  height: 0.125rem;
+  width: 90%;
+  background-color: rgba(0, 0, 0, 0.125);
+  border-radius: 1rem;
+  margin: 1rem;
+  display: none;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.aboutSection .work .workGrid .workCard .bottomRow {
+  display: none;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.aboutSection .work .workGrid .workCard .bottomRow .text {
+  font-size: 1.125rem;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.aboutSection .work .workGrid .workCard:hover .workCardDivider {
+  display: inline;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.aboutSection .work .workGrid .workCard:hover .bottomRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.aboutSection .work .workGrid .lockheed {
+  background: #005bad;
+  background: linear-gradient(166deg, #005bad 0%, #80add6 100%);
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 91, 173, 0.5);
+          box-shadow: 0px 0px 15px rgba(0, 91, 173, 0.5);
 }
 /*# sourceMappingURL=main.css.map */
