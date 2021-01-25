@@ -48,6 +48,16 @@
   max-width: 1200px;
 }
 
+.fadeBottom {
+  position: absolute;
+  bottom: 0px;
+  display: block;
+  width: 100%;
+  height: 50px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.9)));
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9) 100%);
+}
+
 .nav {
   position: fixed;
   bottom: 4rem;
@@ -855,5 +865,284 @@
 .photographySection .introText .text {
   font-size: 1.35rem;
   margin-bottom: 1rem;
+}
+
+.photographySection .photoGrid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  padding-top: 3rem;
+}
+
+.photographySection .photoGrid .gridImg {
+  height: 7rem;
+  width: auto;
+  margin: 1.25rem;
+  margin-left: 0rem;
+  margin-top: 0rem;
+  border-radius: 0.25rem;
+  -webkit-box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.075);
+          box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.075);
+}
+
+.photographySection .photoGrid .gridImg:hover {
+  border-radius: 0.125rem;
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+  cursor: pointer;
+  -webkit-box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.175);
+          box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.175);
+}
+
+.photographySection .platform {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 2rem 0rem;
+  margin-bottom: 0.5rem;
+  -webkit-text-decoration-color: transparent;
+          text-decoration-color: transparent;
+}
+
+.photographySection .platform .intro {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.photographySection .platform .intro .text {
+  font-size: 1.35rem;
+  font-weight: 500;
+}
+
+.photographySection .platform .link {
+  text-decoration: none;
+  color: white;
+  -webkit-text-decoration-color: transparent;
+          text-decoration-color: transparent;
+}
+
+.photographySection .platform .link::before,
+.photographySection .platform .link::after {
+  text-decoration: none;
+  color: white;
+  -webkit-text-decoration-color: transparent;
+          text-decoration-color: transparent;
+}
+
+.photographySection .platform .link:active,
+.photographySection .platform .link:visited {
+  text-decoration: none;
+  color: white;
+  -webkit-text-decoration-color: transparent;
+          text-decoration-color: transparent;
+}
+
+.photographySection .platform .insta {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  -webkit-background-clip: text;
+  /* Also define standard property for compatibility */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.105);
+          box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.105);
+  border-radius: 0.75rem;
+  margin: 1rem 0rem;
+  padding: 0.75rem;
+}
+
+.photographySection .platform .insta .text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  color: white;
+  text-decoration: none;
+}
+
+.photographySection .platform .insta .text::before,
+.photographySection .platform .insta .text::after {
+  text-decoration: none;
+  color: white;
+  -webkit-text-decoration-color: transparent;
+          text-decoration-color: transparent;
+}
+
+.photographySection .platform .insta .text:visited,
+.photographySection .platform .insta .text:active {
+  text-decoration: none;
+  color: white;
+  -webkit-text-decoration-color: transparent;
+          text-decoration-color: transparent;
+}
+
+.photographySection .platform .insta:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  cursor: pointer;
+  -webkit-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.125);
+          box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.125);
+}
+
+.photographySection .platform .youtube {
+  background: red;
+  background: radial-gradient(circle, red 55%, rgba(40, 40, 40, 0.45562) 100%);
+  -webkit-background-clip: text;
+  /* Also define standard property for compatibility */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.105);
+          box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.105);
+  border-radius: 0.75rem;
+  margin: 1rem 0rem;
+  padding: 0.75rem;
+}
+
+.photographySection .platform .youtube .text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  color: white;
+  text-decoration: none;
+}
+
+.photographySection .platform .youtube .text::before,
+.photographySection .platform .youtube .text::after {
+  text-decoration: none;
+  color: white;
+  -webkit-text-decoration-color: transparent;
+          text-decoration-color: transparent;
+}
+
+.photographySection .platform .youtube .text:visited,
+.photographySection .platform .youtube .text:active {
+  text-decoration: none;
+  color: white;
+  -webkit-text-decoration-color: transparent;
+          text-decoration-color: transparent;
+}
+
+.photographySection .platform .youtube:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  cursor: pointer;
+  -webkit-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.125);
+          box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.125);
+}
+
+.contactSection {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contactSection .intro .text {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.contactSection .socialLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contactSection .socialLinks .socialLink {
+  text-transform: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-text-decoration-color: transparent;
+          text-decoration-color: transparent;
+}
+
+.contactSection .socialLinks .socialLink .linkIcon {
+  height: 3rem;
+  width: 3rem;
+  margin: 1.5rem;
+  -webkit-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.125);
+          box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.125);
+  border-radius: 0.75rem;
+}
+
+.contactSection .socialLinks .socialLink .caption {
+  position: relative;
+  bottom: 1rem;
+  opacity: 0;
+}
+
+.contactSection .socialLinks .socialLink .caption .text {
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.contactSection .socialLinks .socialLink:active,
+.contactSection .socialLinks .socialLink:visited {
+  text-decoration: none;
+  -webkit-text-decoration-color: transparent;
+          text-decoration-color: transparent;
+}
+
+.contactSection .socialLinks .socialLink::before,
+.contactSection .socialLinks .socialLink::after {
+  text-decoration: none;
+  -webkit-text-decoration-color: transparent;
+          text-decoration-color: transparent;
+}
+
+.contactSection .socialLinks .socialLink:hover {
+  cursor: pointer;
+}
+
+.contactSection .socialLinks .socialLink:hover .linkIcon {
+  -webkit-transform: scale(1.125);
+          transform: scale(1.125);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.contactSection .socialLinks .socialLink:hover .caption {
+  opacity: 1;
 }
 /*# sourceMappingURL=main.css.map */

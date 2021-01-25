@@ -1,5 +1,7 @@
 import React from "react";
 
+import PhotoGrid from "./PhotoGrid";
+
 function Photography() {
   return (
     <div name="Photography" className="section photographySection">
@@ -8,11 +10,47 @@ function Photography() {
       </div>
       <div className="introText">
         <span className="text">
-          Although I’m primarily a back-end developer well-versed in Python and
-          C/C++, I love to develop applications on the front-end side with
-          React, a JavaScript framework. Because of this, my projects range from
-          one end of the technology stack all the way to the other.
+          Traveling to different countries and places was probably what prompted
+          me to pick up a camera and capture that place in the best way
+          possible. With the rise of Instagram, I got more and more into
+          portraits and recently started delving into videos.
         </span>
+      </div>
+      <PhotoGrid />
+      <div className="platform">
+        <div className="intro">
+          <span className="text">
+            I primarily post all my photos and short vidoes on Instagram so
+            check em out here:
+          </span>
+        </div>
+        <a
+          href="https://www.instagram.com/itShreyas"
+          target="_blank"
+          rel="noreferrer"
+          className="link"
+        >
+          <div className="insta">
+            <span className="text">@itShreyas</span>
+          </div>
+        </a>
+      </div>
+      <div className="platform">
+        <div className="intro">
+          <span className="text">
+            I also make cinematic videos for Youtube:
+          </span>
+        </div>
+        <a
+          href="https://www.youtube.com/shreyasdbz"
+          target="_blank"
+          rel="noreferrer"
+          className="link"
+        >
+          <div className="youtube">
+            <span className="text">@itShreyas</span>
+          </div>
+        </a>
       </div>
     </div>
   );

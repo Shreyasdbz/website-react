@@ -36,6 +36,22 @@ $purpleColor: #b9b6d4;
   // border: 1px solid black;
 }
 
+.fadeBottom {
+  position: absolute;
+  bottom: 0px;
+
+  display: block;
+
+  width: 100%;
+  height: 50px;
+
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.9) 100%
+  );
+}
+
 // ---------------------- NAVIGATION --------------------------------------------
 
 .nav {
@@ -619,6 +635,223 @@ $purpleColor: #b9b6d4;
     .text {
       font-size: 1.35rem;
       margin-bottom: 1rem;
+    }
+  }
+
+  .photoGrid {
+    display: flex;
+    flex-flow: wrap;
+    padding-top: 3rem;
+
+    .gridImg {
+      height: 7rem;
+      width: auto;
+      margin: 1.25rem;
+      margin-left: 0rem;
+      margin-top: 0rem;
+      border-radius: 0.25rem;
+      box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.075);
+    }
+    .gridImg:hover {
+      border-radius: 0.125rem;
+      transform: scale(1.25);
+      cursor: pointer;
+      box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.175);
+    }
+  }
+
+  .platform {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2rem 0rem;
+    margin-bottom: 0.5rem;
+    text-decoration-color: transparent;
+
+    .intro {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      .text {
+        font-size: 1.35rem;
+        font-weight: 500;
+      }
+    }
+
+    .link {
+      text-decoration: none;
+      color: white;
+      text-decoration-color: transparent;
+    }
+    .link::before,
+    .link::after {
+      text-decoration: none;
+      color: white;
+      text-decoration-color: transparent;
+    }
+    .link:active,
+    .link:visited {
+      text-decoration: none;
+      color: white;
+      text-decoration-color: transparent;
+    }
+
+    .insta {
+      background: radial-gradient(
+        circle at 30% 107%,
+        #fdf497 0%,
+        #fdf497 5%,
+        #fd5949 45%,
+        #d6249f 60%,
+        #285aeb 90%
+      );
+      -webkit-background-clip: text;
+      /* Also define standard property for compatibility */
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.105);
+      border-radius: 0.75rem;
+      margin: 1rem 0rem;
+      padding: 0.75rem;
+
+      .text {
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding: 1rem 2rem;
+        color: white;
+        text-decoration: none;
+      }
+      .text::before,
+      .text::after {
+        text-decoration: none;
+        color: white;
+        text-decoration-color: transparent;
+      }
+      .text:visited,
+      .text:active {
+        text-decoration: none;
+        color: white;
+        text-decoration-color: transparent;
+      }
+    }
+    .insta:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.125);
+    }
+
+    .youtube {
+      background: rgb(255, 0, 0);
+      background: radial-gradient(
+        circle,
+        rgba(255, 0, 0, 1) 55%,
+        rgba(40, 40, 40, 0.4556197478991597) 100%
+      );
+      -webkit-background-clip: text;
+      /* Also define standard property for compatibility */
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.105);
+      border-radius: 0.75rem;
+      margin: 1rem 0rem;
+      padding: 0.75rem;
+
+      .text {
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding: 1rem 2rem;
+        color: white;
+        text-decoration: none;
+      }
+      .text::before,
+      .text::after {
+        text-decoration: none;
+        color: white;
+        text-decoration-color: transparent;
+      }
+      .text:visited,
+      .text:active {
+        text-decoration: none;
+        color: white;
+        text-decoration-color: transparent;
+      }
+    }
+    .youtube:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.125);
+    }
+  }
+}
+
+// ---------------------- CONTACT --------------------------------------------
+.contactSection {
+  flex-direction: column;
+  .intro {
+    .text {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+  }
+
+  .socialLinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .socialLink {
+      text-transform: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-decoration-color: transparent;
+
+      .linkIcon {
+        height: 3rem;
+        width: 3rem;
+        margin: 1.5rem;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.125);
+        border-radius: 0.75rem;
+      }
+
+      .caption {
+        position: relative;
+        bottom: 1rem;
+        opacity: 0;
+        .text {
+          font-size: 1rem;
+          font-weight: 500;
+          color: rgba(0, 0, 0, 0.5);
+        }
+      }
+    }
+    .socialLink:active,
+    .socialLink:visited {
+      text-decoration: none;
+      text-decoration-color: transparent;
+    }
+    .socialLink::before,
+    .socialLink::after {
+      text-decoration: none;
+      text-decoration-color: transparent;
+    }
+    .socialLink:hover {
+      cursor: pointer;
+      .linkIcon {
+        transform: scale(1.125);
+        box-shadow: none;
+      }
+      .caption {
+        opacity: 1;
+      }
     }
   }
 }
