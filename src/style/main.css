@@ -10,8 +10,8 @@
 *,
 *::after,
 *::before {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -55,7 +55,7 @@
   display: none;
 }
 
-.textSection {
+.heroSection .textSection {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -74,7 +74,7 @@
   height: 30rem;
 }
 
-.textSection .landingText {
+.heroSection .textSection .landingText {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -90,17 +90,17 @@
           justify-content: center;
 }
 
-.textSection .landingText .normal {
+.heroSection .textSection .landingText .normal {
   font-size: 3rem;
   font-weight: 600;
 }
 
-.textSection .landingText .name {
+.heroSection .textSection .landingText .name {
   font-size: 4rem;
   font-weight: 800;
 }
 
-.textSection .descText {
+.heroSection .textSection .descText {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -111,7 +111,7 @@
   margin: 1rem 0rem;
 }
 
-.textSection .descText .line {
+.heroSection .textSection .descText .line {
   padding: 0.5rem 0rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -125,11 +125,11 @@
           align-items: center;
 }
 
-.textSection .descText .normalText {
+.heroSection .textSection .descText .normalText {
   font-size: 2rem;
 }
 
-.textSection .descText .actionButton {
+.heroSection .textSection .descText .actionButton {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -141,18 +141,14 @@
           justify-content: center;
   border-radius: 20px;
   margin: 0rem 0.5rem;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
 
-.textSection .descText .actionButton .btnText {
+.heroSection .textSection .descText .actionButton .btnText {
   font-size: 1.75rem;
   font-weight: 600;
   color: white;
   padding: 0.25rem 1rem;
   text-shadow: 2px 0px 15px rgba(0, 0, 0, 0.35);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -164,11 +160,11 @@
           justify-content: center;
 }
 
-.textSection .descText .actionButton .btnText .icon {
+.heroSection .textSection .descText .actionButton .btnText .icon {
   margin-left: 0.5rem;
 }
 
-.textSection .descText .codeBtn {
+.heroSection .textSection .descText .codeBtn {
   background-color: #d4b9b6;
   -webkit-box-shadow: 5px 0px 15px rgba(212, 185, 182, 0.75);
           box-shadow: 5px 0px 15px rgba(212, 185, 182, 0.75);
@@ -176,7 +172,7 @@
   border: 2px solid transparent;
 }
 
-.textSection .descText .codeBtn:hover {
+.heroSection .textSection .descText .codeBtn:hover {
   background: none;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -184,12 +180,12 @@
   cursor: pointer;
 }
 
-.textSection .descText .codeBtn:hover .btnText {
+.heroSection .textSection .descText .codeBtn:hover .btnText {
   color: #d4b9b6;
   text-shadow: none;
 }
 
-.textSection .descText .captureBtn {
+.heroSection .textSection .descText .captureBtn {
   background-color: #b6d4b9;
   -webkit-box-shadow: 5px 0px 15px rgba(182, 212, 185, 0.75);
           box-shadow: 5px 0px 15px rgba(182, 212, 185, 0.75);
@@ -197,7 +193,7 @@
   border: 2px solid transparent;
 }
 
-.textSection .descText .captureBtn:hover {
+.heroSection .textSection .descText .captureBtn:hover {
   background: none;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -205,12 +201,12 @@
   cursor: pointer;
 }
 
-.textSection .descText .captureBtn:hover .btnText {
+.heroSection .textSection .descText .captureBtn:hover .btnText {
   color: #b6d4b9;
   text-shadow: none;
 }
 
-.textSection .aboutText {
+.heroSection .textSection .aboutText {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -222,11 +218,11 @@
           justify-content: center;
 }
 
-.textSection .aboutText .normal {
+.heroSection .textSection .aboutText .normal {
   font-size: 1.5rem;
 }
 
-.textSection .aboutText .aboutLink .about {
+.heroSection .textSection .aboutText .aboutLink .about {
   padding: 0rem 0.5rem;
   font-size: 1.5rem;
   font-weight: 600;
@@ -234,23 +230,23 @@
   text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.125);
 }
 
-.textSection .aboutText .aboutLink .icon {
+.heroSection .textSection .aboutText .aboutLink .icon {
   padding: 0;
   font-weight: bold;
 }
 
-.textSection .aboutText .aboutLink:hover {
+.heroSection .textSection .aboutText .aboutLink:hover {
   cursor: pointer;
 }
 
-.textSection .aboutText .aboutLink:hover .icon {
+.heroSection .textSection .aboutText .aboutLink:hover .icon {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-.imageSection {
+.heroSection .imageSection {
   width: 50%;
   display: none;
   -webkit-box-align: center;
@@ -261,7 +257,7 @@
           justify-content: center;
 }
 
-.imageSection .profilePic {
+.heroSection .imageSection .profilePic {
   width: 30rem;
   height: 30rem;
   border-radius: 50rem;
@@ -269,19 +265,17 @@
           box-shadow: 0px 0px 25px #e8d7e3;
 }
 
-.imageSection .profilePic:hover {
+.heroSection .imageSection .profilePic:hover {
   position: relative;
   -webkit-transform: scale(1.025);
           transform: scale(1.025);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
   -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.125);
           box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.125);
   border-radius: 15rem;
 }
 
 @media (min-width: 800px) {
-  .imageSection {
+  .heroSection .imageSection {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -289,6 +283,7 @@
 }
 
 .aboutSection {
+  margin-top: 5rem;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -323,18 +318,22 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
-  padding: 1rem 0rem;
 }
 
 .aboutSection .introText .text {
   font-size: 1.35rem;
+  margin-bottom: 1rem;
 }
 
 .aboutSection .work {
@@ -352,7 +351,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  padding: 1.5rem 0rem;
+  padding: 2rem 0rem;
 }
 
 .aboutSection .work .workIntro span {
@@ -382,7 +381,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 1rem;
+  margin: 1.5rem;
   margin-left: 0rem;
   margin-bottom: 0.5rem;
   border-radius: 0.75rem;
@@ -421,8 +420,8 @@
   height: 2.5rem;
   width: auto;
   border-radius: 5rem;
-  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.125);
-          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.125);
+  -webkit-box-shadow: 0px 2px 15px rgba(102, 59, 59, 0.175);
+          box-shadow: 0px 2px 15px rgba(102, 59, 59, 0.175);
 }
 
 .aboutSection .work .workGrid .workCard .topRow .textSide {
@@ -474,9 +473,8 @@
 }
 
 .aboutSection .work .workGrid .workCard .bottomRow {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
+  opacity: 0;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -498,7 +496,6 @@
 }
 
 .aboutSection .work .workGrid .workCard:hover {
-  position: relative;
   -webkit-transform: scale(1.025);
           transform: scale(1.025);
   -webkit-box-shadow: none;
@@ -507,44 +504,356 @@
 }
 
 .aboutSection .work .workGrid .workCard:hover .topRow .iconSide .workLogo {
-  -webkit-transform: rotate(10deg);
-          transform: rotate(10deg);
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
 .aboutSection .work .workGrid .work-lockheed {
   background: #408ac3;
-  background: linear-gradient(166deg, #408ac3 0%, #77abd4 100%);
-  -webkit-box-shadow: 0px 0px 15px rgba(64, 138, 195, 0.5);
-          box-shadow: 0px 0px 15px rgba(64, 138, 195, 0.5);
+  background: linear-gradient(166deg, rgba(64, 138, 195, 0.75) 0%, rgba(119, 171, 212, 0.75) 100%);
+  -webkit-box-shadow: 0px 2px 15px rgba(64, 138, 195, 0.5);
+          box-shadow: 0px 2px 15px rgba(64, 138, 195, 0.5);
 }
 
 .aboutSection .work .workGrid .work-ups {
   background: #fed800;
-  background: linear-gradient(166deg, #fed800 0%, #ffec80 100%);
-  -webkit-box-shadow: 0px 0px 15px rgba(254, 216, 0, 0.5);
-          box-shadow: 0px 0px 15px rgba(254, 216, 0, 0.5);
+  background: linear-gradient(166deg, rgba(254, 216, 0, 0.75) 0%, rgba(255, 236, 128, 0.75) 100%);
+  -webkit-box-shadow: 0px 2px 15px rgba(254, 216, 0, 0.5);
+          box-shadow: 0px 2px 15px rgba(254, 216, 0, 0.5);
 }
 
 .aboutSection .work .workGrid .work-synchronoss {
   background: #01c9ea;
-  background: linear-gradient(166deg, #01c9ea 0%, #c0f2fa 100%);
-  -webkit-box-shadow: 0px 0px 15px rgba(1, 201, 234, 0.5);
-          box-shadow: 0px 0px 15px rgba(1, 201, 234, 0.5);
+  background: linear-gradient(166deg, rgba(1, 201, 234, 0.75) 0%, rgba(192, 242, 250, 0.75) 100%);
+  -webkit-box-shadow: 0px 2px 15px rgba(1, 201, 234, 0.5);
+          box-shadow: 0px 2px 15px rgba(1, 201, 234, 0.5);
 }
 
 .aboutSection .work .workGrid .work-psu {
   background: #2587bb;
-  background: linear-gradient(166deg, #2587bb 0%, #77b4d4 100%);
-  -webkit-box-shadow: 0px 0px 15px rgba(37, 135, 187, 0.5);
-          box-shadow: 0px 0px 15px rgba(37, 135, 187, 0.5);
+  background: linear-gradient(166deg, rgba(37, 135, 187, 0.75) 0%, rgba(119, 180, 212, 0.75) 100%);
+  -webkit-box-shadow: 0px 2px 15px rgba(37, 135, 187, 0.5);
+          box-shadow: 0px 2px 15px rgba(37, 135, 187, 0.5);
 }
 
 .aboutSection .work .workGrid .work-psu-fb {
   background: #2587bb;
-  background: linear-gradient(166deg, #2587bb 0%, #77b4d4 100%);
-  -webkit-box-shadow: 0px 0px 15px rgba(37, 135, 187, 0.5);
-          box-shadow: 0px 0px 15px rgba(37, 135, 187, 0.5);
+  background: linear-gradient(166deg, rgba(37, 135, 187, 0.75) 0%, rgba(119, 180, 212, 0.75) 100%);
+  -webkit-box-shadow: 0px 2px 15px rgba(37, 135, 187, 0.5);
+          box-shadow: 0px 2px 15px rgba(37, 135, 187, 0.5);
+}
+
+.aboutSection .skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  padding: 1.5rem 0rem;
+}
+
+.aboutSection .skills .skillsIntro span {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.aboutSection .skills .skillsRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.aboutSection .skills .skillsRow .label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 6rem;
+}
+
+.aboutSection .skills .skillsRow .label span {
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding-right: 0.5rem;
+}
+
+.aboutSection .skills .skillsRow .skillsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+}
+
+.aboutSection .skills .skillsRow .skillsContainer .logoContainer .caption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  top: 0.15rem;
+  opacity: 0;
+}
+
+.aboutSection .skills .skillsRow .skillsContainer .logoContainer .caption .text {
+  position: relative;
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.aboutSection .skills .skillsRow .skillsContainer .logoContainer .logo {
+  height: 3rem;
+  width: 3rem;
+  -webkit-box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.125);
+          box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.125);
+  border-radius: 0.75rem;
+  margin: 0.5rem 0.5rem;
+}
+
+.aboutSection .skills .skillsRow .logoContainer:hover .caption {
+  opacity: 1;
+}
+
+.aboutSection .skills .skillsRow .logoContainer:hover .logo {
+  -webkit-transform: scale(1.075);
+          transform: scale(1.075);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.projectsSection {
+  margin-top: 5rem;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.projectsSection .title {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 2rem 0rem;
+}
+
+.projectsSection .title .text {
+  font-size: 3.5rem;
+  color: #d4b9b6;
+  font-weight: 800;
+}
+
+.projectsSection .introText {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.projectsSection .introText .text {
+  font-size: 1.35rem;
+  margin-bottom: 1rem;
+}
+
+.projectsSection .projectsGrid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  width: 100%;
+}
+
+.projectsSection .projectsGrid .projectCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 0.75rem;
+  margin: 1.75rem;
+  margin-left: 0rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.projectsSection .projectsGrid .projectCard .topRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.projectsSection .projectsGrid .projectCard .topRow .title {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.projectsSection .projectsGrid .projectCard .bottomRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.projectsSection .projectsGrid .projectCard .bottomRow .tech {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.projectsSection .projectsGrid .projectCard .bottomRow .tech .caption {
+  display: none;
+  opacity: 0;
+}
+
+.projectsSection .projectsGrid .projectCard .bottomRow .tech .logo {
+  height: 2rem;
+  width: 2rem;
+}
+
+.projectsSection .projectsGrid .projectCard:hover {
+  -webkit-transform: scale(1.025);
+          transform: scale(1.025);
+  -webkit-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.075);
+          box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.075);
+  cursor: pointer;
+}
+
+.photographySection {
+  margin-top: 5rem;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.photographySection .title {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 2rem 0rem;
+}
+
+.photographySection .title .text {
+  font-size: 3.5rem;
+  color: #b6d4b9;
+  font-weight: 800;
+}
+
+.photographySection .introText {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.photographySection .introText .text {
+  font-size: 1.35rem;
+  margin-bottom: 1rem;
 }
 /*# sourceMappingURL=main.css.map */

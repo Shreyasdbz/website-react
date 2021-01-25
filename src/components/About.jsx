@@ -1,120 +1,8 @@
 import React from "react";
 
+import { workExp, languages, technologies } from "../data/aboutData";
+
 function About() {
-  const workExp = [
-    {
-      company: "Lockheed Martin",
-      cssClass: "work-lockheed",
-      location: "Fort Worth, TX",
-      position: "Software Engineer",
-      timeline: "2019 - Present",
-      logo: "lockheedLogo.png",
-      description:
-        "Supported mission critical simulation software development in Python, C & C# applications for the F-16 & F-35. My roles included integrating AI tools to increase efficiency of computer vision algorithms as well as working at the firmware level on communication architecture to enhance simulation capabilities.",
-    },
-    {
-      company: "UPS",
-      cssClass: "work-ups",
-      location: "Scranton, PA",
-      position: "Software Engineering Intern",
-      timeline: "Summer 2018",
-      logo: "upsLogo.jpg",
-      description:
-        "Led the effort of modernizing the front-end for internal .NET revenue allocation applications to accommodate for responsiveness and up-to-date UI design. Also worked on various PL/SQL queries to increase efficiency for large scale data operations.",
-    },
-    {
-      company: "Synchronoss Technologies Inc",
-      cssClass: "work-synchronoss",
-      location: "Bethlehem, PA",
-      position: "Software Engineering Intern",
-      timeline: "Summer 2016",
-      logo: "synchronossLogo.png",
-      description:
-        "Picked up valuable software as well as workplace skills while learning to develop server side Java applications on the Apache web framework for the company’s various clients.",
-    },
-    {
-      company: "Penn State University",
-      cssClass: "work-psu",
-      location: "Erie, PA",
-      position: "IT Help Desk Specialist",
-      timeline: "Fall 2016",
-      logo: "psuLogo.png",
-      description:
-        "Served as a Tech Help Desk specialist for the university’s technology center assisting students and faculty with computer related issues. Other responsibilities included maintaining the tech center website and researching products for educational use.",
-    },
-    {
-      company: "Penn State Athletics",
-      cssClass: "work-psu-fb",
-      location: "State College, PA",
-      position: "Football Photographer",
-      timeline: "Spring 2019",
-      logo: "psuFootballLogo.jpg",
-      description:
-        "Served as a Tech Help Desk specialist for the university’s technology center assisting students and faculty with computer related issues. Other responsibilities included maintaining the tech center website and researching products for educational use.",
-    },
-  ];
-
-  const languages = [
-    {
-      name: "Python",
-      logo: "pythonLogo.png",
-    },
-    {
-      name: "Javascript",
-      logo: "javascriptLogo.png",
-    },
-    {
-      name: "C",
-      logo: "cLogo.png",
-    },
-    {
-      name: "C++",
-      logo: "cPlusPlusLogo.png",
-    },
-    {
-      name: "HTML",
-      logo: "htmlLogo.png",
-    },
-    {
-      name: "CSS",
-      logo: "cssLogo.png",
-    },
-    {
-      name: "Bash",
-      logo: "bashLogo.png",
-    },
-  ];
-  const technologies = [
-    {
-      name: "Node.JS",
-      logo: "nodeLogo.png",
-    },
-    {
-      name: "React.JS",
-      logo: "reactLogo.png",
-    },
-    {
-      name: "Flask",
-      logo: "flaskLogo.png",
-    },
-    {
-      name: "REST API",
-      logo: "restLogo.png",
-    },
-    {
-      name: "Git",
-      logo: "gitLogo.png",
-    },
-    {
-      name: "Agile Development",
-      logo: "agileLogo.png",
-    },
-    {
-      name: "Photoshop",
-      logo: "photoshopLogo.png",
-    },
-  ];
-
   return (
     <div name="About" className="section aboutSection">
       <div className="title">
@@ -122,15 +10,16 @@ function About() {
       </div>
       <div className="introText">
         <span className="text">
-          I’m currently a software engineer over at Lockheed Martin in Fort
-          Worth, TX. When I’m not working on some cool fighter jet simulations,
-          I like to take photos of people and places. Oh and play soccer. Tons
-          of it.
+          I graduated from Pennsylvania State University in the spring of 2019
+          with a B.S. in Computer Engineering. Since then, I’ve been working as
+          a software engineer over at Lockheed Martin. When I’m not working on
+          some cool fighter jet simulations, I like to take photos of people and
+          places. Oh and play soccer. Tons of it.
         </span>
       </div>
       <div className="work">
         <div className="workIntro">
-          <span>Here's couple of the companies I have worked with so far:</span>
+          <span>Here's couple of the companies I have worked with so far.</span>
         </div>
         <div className="workGrid">
           {workExp.map((work) => {
@@ -147,12 +36,60 @@ function About() {
                   <div className="textSide">
                     <span className="companyName">{work.company}</span>
                     <span className="position">{work.position}</span>
-                    {/* <span className="timeline">{work.timeline}</span> */}
                   </div>
                 </div>
               </div>
             );
           })}
+        </div>
+      </div>
+      <div className="skills">
+        <div className="skillsIntro">
+          <span>And some skills I've picked up during that.</span>
+        </div>
+        <div className="skillsRow">
+          <div className="label">
+            <span className="text">Languages:</span>
+          </div>
+          <div className="skillsContainer">
+            {languages.map((lang) => {
+              return (
+                <div className="logoContainer">
+                  <div className="caption">
+                    <span className="text">{lang.name}</span>
+                  </div>
+                  <img
+                    src={lang.logo}
+                    alt={lang.name}
+                    key={lang.name}
+                    className="logo"
+                  />
+                </div>
+              );
+            })}
+          </div>
+        </div>
+        <div className="skillsRow">
+          <div className="label">
+            <span className="text">Technologies:</span>
+          </div>
+          <div className="skillsContainer">
+            {technologies.map((lang) => {
+              return (
+                <div className="logoContainer">
+                  <div className="caption">
+                    <span className="text">{lang.name}</span>
+                  </div>
+                  <img
+                    src={lang.logo}
+                    alt={lang.name}
+                    key={lang.name}
+                    className="logo"
+                  />
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </div>

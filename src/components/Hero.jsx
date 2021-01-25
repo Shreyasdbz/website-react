@@ -7,7 +7,7 @@ import { BsCamera } from "react-icons/bs";
 
 function Hero() {
   return (
-    <div name="Hero" className="section">
+    <div name="Hero" className="section heroSection">
       <div className="textSection">
         <div className="landingText">
           <span className="normal">Hi there!</span>

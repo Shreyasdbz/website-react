@@ -14,7 +14,7 @@ $purpleColor: #b9b6d4;
 *,
 *::after,
 *::before {
-  transition: 0.3s;
+  transition: 0.5s;
   box-sizing: border-box;
 }
 
@@ -36,7 +36,7 @@ $purpleColor: #b9b6d4;
   // border: 1px solid black;
 }
 
-// ---------------------- NAVIGATION ----------------------
+// ---------------------- NAVIGATION --------------------------------------------
 
 .nav {
   position: fixed;
@@ -45,178 +45,178 @@ $purpleColor: #b9b6d4;
   display: none;
 }
 
-// ---------------------- HERO ----------------------
+// ---------------------- HERO --------------------------------------------
 
-.textSection {
-  width: 50%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  width: 50%;
-  height: 30rem;
-
-  .landingText {
+.heroSection {
+  .textSection {
+    width: 50%;
     display: flex;
-    flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-
-    .normal {
-      font-size: 3rem;
-      font-weight: 600;
-    }
-
-    .name {
-      font-size: 4rem;
-      font-weight: 800;
-    }
-  }
-
-  .descText {
-    display: flex;
     flex-direction: column;
-    margin: 1rem 0rem;
+    width: 50%;
+    height: 30rem;
 
-    .line {
-      padding: 0.5rem 0rem;
+    .landingText {
       display: flex;
-      flex-direction: row;
-      align-items: center;
-    }
-
-    .normalText {
-      font-size: 2rem;
-    }
-
-    .actionButton {
-      display: flex;
-      align-items: center;
+      flex-direction: column;
+      align-items: flex-start;
       justify-content: center;
-      border-radius: 20px;
-      margin: 0rem 0.5rem;
-      transition: 0.3s;
 
-      .btnText {
-        font-size: 1.75rem;
+      .normal {
+        font-size: 3rem;
         font-weight: 600;
-        color: white;
-        padding: 0.25rem 1rem;
-        text-shadow: 2px 0px 15px rgba(0, 0, 0, 0.35);
-        transition: 0.3s;
+      }
+
+      .name {
+        font-size: 4rem;
+        font-weight: 800;
+      }
+    }
+
+    .descText {
+      display: flex;
+      flex-direction: column;
+      margin: 1rem 0rem;
+
+      .line {
+        padding: 0.5rem 0rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .normalText {
+        font-size: 2rem;
+      }
+
+      .actionButton {
         display: flex;
         align-items: center;
         justify-content: center;
+        border-radius: 20px;
+        margin: 0rem 0.5rem;
 
-        .icon {
-          margin-left: 0.5rem;
+        .btnText {
+          font-size: 1.75rem;
+          font-weight: 600;
+          color: white;
+          padding: 0.25rem 1rem;
+          text-shadow: 2px 0px 15px rgba(0, 0, 0, 0.35);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .icon {
+            margin-left: 0.5rem;
+          }
+        }
+      }
+
+      .codeBtn {
+        background-color: rgb(212, 185, 182);
+        box-shadow: 5px 0px 15px rgba(212, 185, 182, 0.75);
+        border-radius: 20px;
+        border: 2px solid transparent;
+      }
+      .codeBtn:hover {
+        background: none;
+        box-shadow: none;
+        border: 2px solid rgb(212, 185, 182);
+        cursor: pointer;
+
+        .btnText {
+          color: rgb(212, 185, 182);
+          // text-shadow: 2px 0px 15px rgba(212, 185, 182, 0.5);
+          text-shadow: none;
+        }
+      }
+
+      .captureBtn {
+        background-color: rgb(182, 212, 185);
+        box-shadow: 5px 0px 15px rgba(182, 212, 185, 0.75);
+        border-radius: 20px;
+        border: 2px solid transparent;
+      }
+      .captureBtn:hover {
+        background: none;
+        box-shadow: none;
+        border: 2px solid rgb(182, 212, 185);
+        cursor: pointer;
+
+        .btnText {
+          color: rgb(182, 212, 185);
+          // text-shadow: 2px 0px 15px rgba(182, 212, 185, 0.5);
+          text-shadow: none;
         }
       }
     }
 
-    .codeBtn {
-      background-color: rgb(212, 185, 182);
-      box-shadow: 5px 0px 15px rgba(212, 185, 182, 0.75);
-      border-radius: 20px;
-      border: 2px solid transparent;
-    }
-    .codeBtn:hover {
-      background: none;
-      box-shadow: none;
-      border: 2px solid rgb(212, 185, 182);
-      cursor: pointer;
+    .aboutText {
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-      .btnText {
-        color: rgb(212, 185, 182);
-        // text-shadow: 2px 0px 15px rgba(212, 185, 182, 0.5);
-        text-shadow: none;
+      .normal {
+        font-size: 1.5rem;
       }
-    }
 
-    .captureBtn {
-      background-color: rgb(182, 212, 185);
-      box-shadow: 5px 0px 15px rgba(182, 212, 185, 0.75);
-      border-radius: 20px;
-      border: 2px solid transparent;
-    }
-    .captureBtn:hover {
-      background: none;
-      box-shadow: none;
-      border: 2px solid rgb(182, 212, 185);
-      cursor: pointer;
+      .aboutLink {
+        .about {
+          padding: 0rem 0.5rem;
+          font-size: 1.5rem;
+          font-weight: 600;
+          color: #b9b6d4;
+          text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.125);
+        }
 
-      .btnText {
-        color: rgb(182, 212, 185);
-        // text-shadow: 2px 0px 15px rgba(182, 212, 185, 0.5);
-        text-shadow: none;
+        .icon {
+          padding: 0;
+          font-weight: bold;
+        }
+      }
+      .aboutLink:hover {
+        cursor: pointer;
+
+        .icon {
+          transform: rotate(90deg);
+          transition: 0.5s;
+        }
       }
     }
   }
 
-  .aboutText {
-    display: flex;
+  .imageSection {
+    width: 50%;
+    display: none;
     align-items: center;
     justify-content: center;
 
-    .normal {
-      font-size: 1.5rem;
+    .profilePic {
+      width: 30rem;
+      height: 30rem;
+      border-radius: 50rem;
+      box-shadow: 0px 0px 25px rgba(232, 215, 227, 1);
     }
-
-    .aboutLink {
-      .about {
-        padding: 0rem 0.5rem;
-        font-size: 1.5rem;
-        font-weight: 600;
-        color: #b9b6d4;
-        text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.125);
-      }
-
-      .icon {
-        padding: 0;
-        font-weight: bold;
-      }
+    .profilePic:hover {
+      position: relative;
+      transform: scale(1.025);
+      // transform: rotate(5deg);
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.125);
+      border-radius: 15rem;
     }
-    .aboutLink:hover {
-      cursor: pointer;
-
-      .icon {
-        transform: rotate(90deg);
-        transition: 0.5s;
-      }
+  }
+  @media (min-width: 800px) {
+    .imageSection {
+      display: flex;
     }
   }
 }
 
-.imageSection {
-  width: 50%;
-  display: none;
-  align-items: center;
-  justify-content: center;
-
-  .profilePic {
-    width: 30rem;
-    height: 30rem;
-    border-radius: 50rem;
-    box-shadow: 0px 0px 25px rgba(232, 215, 227, 1);
-  }
-  .profilePic:hover {
-    position: relative;
-    transform: scale(1.025);
-    // transform: rotate(5deg);
-    transition: 0.3s;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.125);
-    border-radius: 15rem;
-  }
-}
-@media (min-width: 800px) {
-  .imageSection {
-    display: flex;
-  }
-}
-
-// ---------------------- ABOUT ----------------------
+// ---------------------- ABOUT --------------------------------------------
 
 .aboutSection {
+  margin-top: 5rem;
   justify-content: flex-start;
   flex-direction: column;
 
@@ -237,12 +237,13 @@ $purpleColor: #b9b6d4;
   .introText {
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
     width: 100%;
-    padding: 1rem 0rem;
     .text {
       font-size: 1.35rem;
+      margin-bottom: 1rem;
     }
   }
 
@@ -252,7 +253,7 @@ $purpleColor: #b9b6d4;
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    padding: 1.5rem 0rem;
+    padding: 2rem 0rem;
 
     .workIntro {
       span {
@@ -270,7 +271,7 @@ $purpleColor: #b9b6d4;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        margin: 1rem;
+        margin: 1.5rem;
         margin-left: 0rem;
         margin-bottom: 0.5rem;
         border-radius: 0.75rem;
@@ -291,7 +292,7 @@ $purpleColor: #b9b6d4;
               height: 2.5rem;
               width: auto;
               border-radius: 5rem;
-              box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.125);
+              box-shadow: 0px 2px 15px rgba(102, 59, 59, 0.175);
               // border: 3px solid white;
             }
           }
@@ -337,7 +338,8 @@ $purpleColor: #b9b6d4;
         }
 
         .bottomRow {
-          display: flex;
+          display: none;
+          opacity: 0;
           align-items: flex-start;
           justify-content: center;
           flex-direction: column;
@@ -351,7 +353,6 @@ $purpleColor: #b9b6d4;
         }
       }
       .workCard:hover {
-        position: relative;
         transform: scale(1.025);
         box-shadow: none;
         cursor: pointer;
@@ -359,7 +360,7 @@ $purpleColor: #b9b6d4;
         .topRow {
           .iconSide {
             .workLogo {
-              transform: rotate(10deg);
+              transform: rotate(15deg);
               box-shadow: none;
             }
           }
@@ -370,47 +371,254 @@ $purpleColor: #b9b6d4;
         background: rgb(64, 138, 195);
         background: linear-gradient(
           166deg,
-          rgba(64, 138, 195, 1) 0%,
-          rgba(119, 171, 212, 1) 100%
+          rgba(64, 138, 195, 0.75) 0%,
+          rgba(119, 171, 212, 0.75) 100%
         );
-        box-shadow: 0px 0px 15px rgba(64, 138, 195, 0.5);
+        box-shadow: 0px 2px 15px rgba(64, 138, 195, 0.5);
       }
       .work-ups {
         background: rgb(254, 216, 0);
         background: linear-gradient(
           166deg,
-          rgba(254, 216, 0, 1) 0%,
-          rgba(255, 236, 128, 1) 100%
+          rgba(254, 216, 0, 0.75) 0%,
+          rgba(255, 236, 128, 0.75) 100%
         );
-        box-shadow: 0px 0px 15px rgba(254, 216, 0, 0.5);
+        box-shadow: 0px 2px 15px rgba(254, 216, 0, 0.5);
       }
       .work-synchronoss {
         background: rgb(1, 201, 234);
         background: linear-gradient(
           166deg,
-          rgba(1, 201, 234, 1) 0%,
-          rgba(192, 242, 250, 1) 100%
+          rgba(1, 201, 234, 0.75) 0%,
+          rgba(192, 242, 250, 0.75) 100%
         );
-        box-shadow: 0px 0px 15px rgba(1, 201, 234, 0.5);
+        box-shadow: 0px 2px 15px rgba(1, 201, 234, 0.5);
       }
       .work-psu {
         background: rgb(37, 135, 187);
         background: linear-gradient(
           166deg,
-          rgba(37, 135, 187, 1) 0%,
-          rgba(119, 180, 212, 1) 100%
+          rgba(37, 135, 187, 0.75) 0%,
+          rgba(119, 180, 212, 0.75) 100%
         );
-        box-shadow: 0px 0px 15px rgba(37, 135, 187, 0.5);
+        box-shadow: 0px 2px 15px rgba(37, 135, 187, 0.5);
       }
       .work-psu-fb {
         background: rgb(37, 135, 187);
         background: linear-gradient(
           166deg,
-          rgba(37, 135, 187, 1) 0%,
-          rgba(119, 180, 212, 1) 100%
+          rgba(37, 135, 187, 0.75) 0%,
+          rgba(119, 180, 212, 0.75) 100%
         );
-        box-shadow: 0px 0px 15px rgba(37, 135, 187, 0.5);
+        box-shadow: 0px 2px 15px rgba(37, 135, 187, 0.5);
       }
+    }
+  }
+
+  .skills {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 1.5rem 0rem;
+
+    .skillsIntro {
+      span {
+        font-size: 2rem;
+        font-weight: 600;
+      }
+    }
+
+    .skillsRow {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: row;
+
+      .label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 6rem;
+        span {
+          font-size: 1.25rem;
+          font-weight: 500;
+          padding-right: 0.5rem;
+        }
+      }
+
+      .skillsContainer {
+        display: flex;
+        flex-flow: wrap;
+
+        .logoContainer {
+          .caption {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            top: 0.15rem;
+            opacity: 0;
+
+            .text {
+              position: relative;
+              font-size: 1rem;
+              font-weight: 600;
+              color: rgba(0, 0, 0, 0.5);
+            }
+          }
+
+          .logo {
+            height: 3rem;
+            width: 3rem;
+            box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.125);
+            border-radius: 0.75rem;
+            margin: 0.5rem 0.5rem;
+          }
+        }
+      }
+      .logoContainer:hover {
+        .caption {
+          opacity: 1;
+        }
+
+        .logo {
+          // transform: rotate(5deg);
+          transform: scale(1.075);
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}
+
+// ---------------------- PROJECTS --------------------------------------------
+.projectsSection {
+  margin-top: 5rem;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  .title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2rem 0rem;
+
+    .text {
+      font-size: 3.5rem;
+      color: $brownColor;
+      font-weight: 800;
+    }
+  }
+
+  .introText {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    .text {
+      font-size: 1.35rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .projectsGrid {
+    display: flex;
+    flex-flow: wrap;
+    width: 100%;
+
+    .projectCard {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+      border-radius: 0.75rem;
+      margin: 1.75rem;
+      margin-left: 0rem;
+      margin-bottom: 1rem;
+      padding: 1rem;
+
+      .topRow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // border: 1px solid black;
+
+        .title {
+          font-size: 1.25rem;
+          font-weight: 500;
+        }
+      }
+
+      .bottomRow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        // border: 1px solid black;
+
+        .tech {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+
+          .caption {
+            display: none;
+            opacity: 0;
+          }
+
+          .logo {
+            height: 2rem;
+            width: 2rem;
+          }
+        }
+      }
+    }
+    .projectCard:hover {
+      transform: scale(1.025);
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.075);
+      cursor: pointer;
+    }
+  }
+}
+
+// ---------------------- PHOTOGRAPHY --------------------------------------------
+
+.photographySection {
+  margin-top: 5rem;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  .title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2rem 0rem;
+
+    .text {
+      font-size: 3.5rem;
+      color: $greenColor;
+      font-weight: 800;
+    }
+  }
+
+  .introText {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    .text {
+      font-size: 1.35rem;
+      margin-bottom: 1rem;
     }
   }
 }
